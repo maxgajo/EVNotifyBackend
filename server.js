@@ -1,5 +1,7 @@
 var express = require('express'),
     app = express(),
+    server = require('http').Server(app),
+    io = require('socket.io')(server),
     srv_config = require('./srv_config.json'),
     fs = require('fs'),
     cors = require('cors'),
@@ -23,6 +25,14 @@ var express = require('express'),
     telegram = ((!srv_config.TELEGRAM_TOKEN)? false : require('./notification/telegram/')),
     stations = require('./charging/stations/'),
     notification = require('./notification');
+
+// start socket server
+server.listen(8877);
+io.on('connection', function (socket) {
+    socket.join('akey.token');
+    console.log('new socket connection: ', socket.id);
+    io.to('akey.token').emit('soc', 17);
+});
 
 // session handling (for EVNotify Web)
 app.use(session({

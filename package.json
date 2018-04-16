@@ -17,6 +17,7 @@
     "password-hash": "^1.2.2",
     "request": "^2.82.0",
     "rollbar": "^2.2.7",
+    "socket.io": "^2.1.0",
     "stringinject": "^2.0.2"
   },
   "devDependencies": {},
