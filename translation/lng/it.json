@@ -1,0 +1,18 @@
+
+{
+    "EVNOTIFY_MAIL_SUBJECT": "EVNotify - Notifica dello Stato di Carica ({SOC}%)",
+    "EVNOTIFY_MAIL_TEXT": "Lo Stato di Carica desiderato del {SOC}% é appena stato arggiunto. Con questo, potrai guidare per circa {RANGE}. Thank you for using EVNotify.",
+    "EVNOTIFY_MAIL_ERROR_SUBJECT": "EVNotify - Notifica di Carica Interrotta ({SOC}%)",
+    "EVNOTIFY_MAIL_ERROR_TEXT": "La carica si é interrotta al {SOC}% o la comunicazione con l'auto é fallita. Meglio controllare!",
+    "TELEGRAM_START_TEXT": "Ciao! io sono EVNotify Bot e ti invierò notifiche circa lo stato di carica, se ti piace. Basta digitare /subscribe per iniziare. Se hai bisogno di aiuto, puoi sempre digitare /help.",
+    "TELEGRAM_HELP_TEXT": "Io posso informarti circa lo stato di carica della tua auto elettrica. Per fare ciò, semplicemente digita /subscribe. Se non vuoi più essere informato allora digita /unsubscribe.",
+    "TELEGRAM_TOKEN_ENTER": "Io posso informarti anche ora. Prima di tutto ho bisogno del tuo token. You can find this in the app under Settings. Don't ever share this with third parties!",
+    "TELEGRAM_SUBSCRIBTION_SUCCESSFULL": "Great! As of now I can notify you. Enter the desired value in the app and I will notify you as soon as this value is reached.",
+    "TELEGRAM_SUBSCRIBTION_FAILED": "Sorry! Somehow there's nothing I can do with this token - are you sure it is correct? Please try to enter /subscribe again. ",
+    "TELEGRAM_UNSUBSCRIBTION_SUCCESSFULL": "I won't notify you again. In case you change your mind, you can enter /subscribe again at any time.",
+    "TELEGRAM_UNSUBSCRIBTION_FAILED": "Strange, something went wrong with your request to remove you from the notification list. Please try again at a later time with /unsubscribe.",
+    "TELEGRAM_NOTIFICATION_MESSAGE": "Hello! I just wanted to notify you that your electric vehicle now has reached the desired charging status of {SOC}%! With that, you can drive about {RANGE}.",
+    "TELEGRAM_NOTIFICATION_ERROR_MESSAGE": "Hello! It seems as if the charging process had been interrupted or there was an error within the communication with the car. Better have a look!",
+    "TELEGRAM_SOC": "The latest state of charge for your electric car is {SOC}%. This will take you about {RANGE}. Last stand: {TIME}",
+    "TELEGRAM_SOC_ERROR": "I could not retrieve the state of charge of your electric car unfortunately. This happens often when AutoSync has not been activated in the settings."
+}
